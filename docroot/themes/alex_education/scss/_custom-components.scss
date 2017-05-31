@@ -1,0 +1,87 @@
+.postscript-top {
+  background-color: #F8F6F7;
+  padding: 20px 0;
+}
+
+.postscript-middle {
+  background-color: #E0E0E0;
+  padding: 20px 0;
+}
+
+.postscript-bottom {
+  color: #FFF;
+  padding: 0 0 20px 0;
+  background: url(../images/postscript-bottom-bg.png) #2B2B2B;
+  h2 {
+    color: #FFF;
+  }
+  a {
+    color: #FEDC66;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
+
+.node-readmore,
+.more-link {
+  float: right;
+  font-weight: 700;
+}
+
+.form-item .label {
+  color: #000;
+  font-size: 100%;
+}
+
+.statistics-counter {
+  float: right;
+}
+
+.field--name-field-tags {
+  .field--item {
+    position: relative;
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    border: 1px solid #C8C8C8;
+    border-right: none;
+    padding: 0 10px;
+    a {
+
+    }
+    &:after {
+      background: url(../images/stat-sprite.png) no-repeat transparent;
+      background-position: -178px -219px;
+      content: '';
+      display: block;
+      position: absolute;
+      height: 20px;
+      right: -5px;
+      top: 0;
+      width: 5px;
+    }
+  }
+}
+
+.feed-icons {
+
+}
+
+.feed-icon {
+  background: url(../../../core/misc/feed.svg) no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.region-sidebar-second {
+  section,
+  nav {
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+  }
+}

@@ -1,0 +1,16 @@
+article {
+  .author {
+    margin-bottom: 6px;
+  }
+  .field--type-image {
+    float: left;
+    margin: 0 15px 15px 0;
+  }
+  mark {
+    float: right;
+    padding: 3px 6px;
+    color: #FFF;
+    background-color: #FEDC66;
+    border-radius: 4px;
+  }
+}

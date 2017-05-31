@@ -25,17 +25,78 @@ ol, ul {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #1B5285;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.main-container {
+  margin-bottom: 15px;
+}
+
 // Page header.
 .page-header {
   margin-top: 0;
 }
 
+.breadcrumb {
+  padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
+  border-radius: 0;
+  font-size: 11px;
+  height: 30px;
+  > li {
+    display: block;
+    float: left;
+    height: 30px;
+    + li:before {
+      content: "\00a0";
+      padding: 0;
+      background: transparent url(../images/stat-sprite.png) no-repeat scroll -288px -553px;
+      display: block;
+      float: left;
+      height: 30px;
+      width: 12px;
+
+    }
+    + li:last-child:before {
+      background-position: -288px -583px !important;
+    }
+    &:last-child {
+      > a {
+        background-color: $breadcrumb-bg;
+      }
+    }
+  }
+  a {
+    color:$breadcrumb-color;
+    background: #FFF;
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 10px 0 20px
+  }
+
+  > .active {
+    color: $breadcrumb-active-color;
+  }
+}
+
+
+
 // Footer.
 .footer {
-  margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
+  .copyright {
+    float: right;
+  }
 }
 
 // Paragraphs.
