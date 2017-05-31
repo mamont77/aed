@@ -7,3 +7,5 @@ docroot/sites/*/private
 /_mydata
 /docroot/sites/default/settings.php
 /docroot/sites/default/settings.local.php
+/docroot/themes/alex_education/.sass-cache
+/docroot/themes/alex_education/node_modules

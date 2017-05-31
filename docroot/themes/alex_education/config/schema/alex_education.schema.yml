@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the Alexander in Education theme.
+
+alex_education.settings:
+  type: theme_settings
+  label: 'Alexander in Education settings'
