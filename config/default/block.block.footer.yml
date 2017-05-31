@@ -1,0 +1,28 @@
+uuid: e17c7c53-76b1-4bd3-9164-06ed00ba7a56
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_class
+    - system
+  theme:
+    - alex_education
+third_party_settings:
+  block_class:
+    classes: ''
+id: footer
+theme: alex_education
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

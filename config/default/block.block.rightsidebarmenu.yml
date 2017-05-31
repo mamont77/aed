@@ -1,0 +1,28 @@
+uuid: f165d5ae-2028-4d47-9b53-4002d534ed95
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.right-sidebar-menu
+  module:
+    - block_class
+    - system
+  theme:
+    - alex_education
+third_party_settings:
+  block_class:
+    classes: ''
+id: rightsidebarmenu
+theme: alex_education
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:right-sidebar-menu'
+settings:
+  id: 'system_menu_block:right-sidebar-menu'
+  label: 'Right Sidebar Menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

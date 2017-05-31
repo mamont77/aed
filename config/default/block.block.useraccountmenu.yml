@@ -1,0 +1,28 @@
+uuid: 42660884-9111-4a36-a2b9-f8bef5597213
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - block_class
+    - system
+  theme:
+    - alex_education
+third_party_settings:
+  block_class:
+    classes: ''
+id: useraccountmenu
+theme: alex_education
+region: navigation_collapsible
+weight: -5
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

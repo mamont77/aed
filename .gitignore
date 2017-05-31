@@ -4,3 +4,6 @@ docroot/sites/*/files
 docroot/sites/*/private
 
 /.idea
+/_mydata
+/docroot/sites/default/settings.php
+/docroot/sites/default/settings.local.php

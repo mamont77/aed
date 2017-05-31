@@ -1,0 +1,29 @@
+uuid: 8703be17-64d1-48ee-8d11-44f23eda800a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:640a469b-fd4d-408a-8ea2-663c254fb58f'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - alex_education
+third_party_settings:
+  block_class:
+    classes: ''
+id: basicblock
+theme: alex_education
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:640a469b-fd4d-408a-8ea2-663c254fb58f'
+settings:
+  id: 'block_content:640a469b-fd4d-408a-8ea2-663c254fb58f'
+  label: 'Basic Block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

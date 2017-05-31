@@ -1,0 +1,22 @@
+uuid: 67ec1d17-7b05-4ec8-bbcd-8d4b6f2894fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - alex_education
+_core:
+  default_config_hash: YRY68JWkaUiGeZlWMv1nzeIgDm0ZZwXYgpqUpLFzwAY
+id: alex_education_content
+theme: alex_education
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

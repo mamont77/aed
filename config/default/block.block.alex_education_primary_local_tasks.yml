@@ -1,0 +1,22 @@
+uuid: 47afa2d1-3672-4773-acd7-28d0d24e7148
+langcode: en
+status: true
+dependencies:
+  theme:
+    - alex_education
+_core:
+  default_config_hash: ddy1OsBbWxjwEI8VL1viD4I69qcLHOkul4BxbTqLBTs
+id: alex_education_primary_local_tasks
+theme: alex_education
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

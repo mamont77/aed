@@ -1,0 +1,8 @@
+uuid: c693c7a9-a540-453f-895d-529449a88007
+langcode: en
+status: true
+dependencies: {  }
+id: right-sidebar-menu
+label: 'Right Sidebar Menu'
+description: ''
+locked: false

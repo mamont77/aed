@@ -1,0 +1,28 @@
+uuid: 011bab44-41e8-43d2-9f81-ad197dc66bea
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - block_class
+    - system
+  theme:
+    - alex_education
+third_party_settings:
+  block_class:
+    classes: ''
+id: tools
+theme: alex_education
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

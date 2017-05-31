@@ -1,0 +1,20 @@
+uuid: e873a880-03e8-4f4c-a9e9-9b40a80b93c5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - alex_education
+_core:
+  default_config_hash: HHryZVJbeKi9WnuBGC8FOhBZmBnk2G1H6KxFuy-rC9A
+id: alex_education_local_actions
+theme: alex_education
+region: header
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

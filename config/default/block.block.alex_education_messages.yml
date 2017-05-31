@@ -1,0 +1,22 @@
+uuid: d4742cb9-866a-4bb0-b9bf-d5923f9431af
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - alex_education
+_core:
+  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
+id: alex_education_messages
+theme: alex_education
+region: header
+weight: -10
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

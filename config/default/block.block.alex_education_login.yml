@@ -1,0 +1,22 @@
+uuid: 3c1782c6-4514-40b8-92f5-22ec08447ea1
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - alex_education
+_core:
+  default_config_hash: IItlF4SKHgxduIysVQdvirDJ_v3HGuAviOkidAOJYRE
+id: alex_education_login
+theme: alex_education
+region: sidebar_second
+weight: -5
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility: {  }

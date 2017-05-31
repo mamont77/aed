@@ -1,0 +1,9 @@
+uuid: 0aac2551-190e-47a1-96eb-056300321739
+langcode: und
+status: true
+dependencies: {  }
+name: tris
+vid: tris
+description: 'Description of tris'
+hierarchy: 1
+weight: 9

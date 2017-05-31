@@ -1,0 +1,22 @@
+uuid: 754c2646-b6c6-4325-9b7e-579f5bee79c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - alex_education
+_core:
+  default_config_hash: WWu2OQswgCztl9OeXjD1stexIEMZsSgPMYIdC-JHx9c
+id: alex_education_breadcrumbs
+theme: alex_education
+region: content
+weight: -8
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

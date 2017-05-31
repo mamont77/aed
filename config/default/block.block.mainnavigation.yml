@@ -1,0 +1,28 @@
+uuid: 6b44e0eb-2302-405f-a15d-03372d7f3210
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_class
+    - system
+  theme:
+    - alex_education
+third_party_settings:
+  block_class:
+    classes: ''
+id: mainnavigation
+theme: alex_education
+region: navigation_collapsible
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 68022de0-9e5e-49e0-9e6d-13db918663cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - statistics
+  theme:
+    - alex_education
+third_party_settings:
+  block_class:
+    classes: ''
+id: popularcontent
+theme: alex_education
+region: sidebar_second
+weight: -6
+provider: null
+plugin: statistics_popular_block
+settings:
+  id: statistics_popular_block
+  label: 'Popular content'
+  provider: statistics
+  label_display: visible
+  top_day_num: 0
+  top_all_num: 0
+  top_last_num: 0
+visibility: {  }
