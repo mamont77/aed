@@ -9,3 +9,4 @@ docroot/sites/*/private
 /docroot/sites/default/settings.local.php
 /docroot/themes/alex_education/.sass-cache
 /docroot/themes/alex_education/node_modules
+/docroot/themes/alex_education/css/*.map
