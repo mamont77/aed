@@ -59,6 +59,7 @@ module.exports = function (grunt) {
         }]
       }
     },
+
     autoprefixer: {
       dist: {
         options: {
@@ -87,6 +88,65 @@ module.exports = function (grunt) {
     //     }
     //   }
     // },
+
+    realFavicon: {
+      favicons: {
+        src: 'images/STAT.png',
+        dest: '/',
+        options: {
+          iconsPath: '/',
+          html: [ 'templates/system/html.html.twig' ],
+          design: {
+            ios: {
+              pictureAspect: 'noChange',
+              assets: {
+                ios6AndPriorIcons: false,
+                ios7AndLaterIcons: false,
+                precomposedIcons: false,
+                declareOnlyDefaultIcon: true
+              }
+            },
+            desktopBrowser: {},
+            windows: {
+              pictureAspect: 'noChange',
+              backgroundColor: '#da532c',
+              onConflict: 'override',
+              assets: {
+                windows80Ie10Tile: false,
+                windows10Ie11EdgeTiles: {
+                  small: false,
+                  medium: true,
+                  big: false,
+                  rectangle: false
+                }
+              }
+            },
+            androidChrome: {
+              pictureAspect: 'noChange',
+              themeColor: '#ffffff',
+              manifest: {
+                display: 'standalone',
+                orientation: 'notSet',
+                onConflict: 'override',
+                declared: true
+              },
+              assets: {
+                legacyIcon: false,
+                lowResolutionIcons: false
+              }
+            },
+            safariPinnedTab: {
+              pictureAspect: 'silhouette',
+              themeColor: '#5bbad5'
+            }
+          },
+          settings: {
+            scalingAlgorithm: 'Mitchell',
+            errorOnImageTooSmall: false
+          }
+        }
+      }
+    },
 
     // Watches files for changes and runs tasks based on the changed files.
     watch: {

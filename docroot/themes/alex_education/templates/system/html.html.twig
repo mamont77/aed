@@ -44,31 +44,36 @@
  * @see template_process()
  */
 #}
-{%
-  set body_classes = [
-    logged_in ? 'user-logged-in',
-    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
-    node_type ? 'page-node-type-' ~ node_type|clean_class,
-    db_offline ? 'db-offline',
-    theme.settings.navbar_position ? 'navbar-is-' ~ theme.settings.navbar_position,
-    theme.has_glyphicons ? 'has-glyphicons',
-  ]
-%}
+{% set body_classes = [
+logged_in ? 'user-logged-in',
+not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+node_type ? 'page-node-type-' ~ node_type|clean_class,
+db_offline ? 'db-offline',
+theme.settings.navbar_position ? 'navbar-is-' ~ theme.settings.navbar_position,
+theme.has_glyphicons ? 'has-glyphicons',
+] %}
 <!DOCTYPE html>
 <html {{ html_attributes }}>
-  <head>
-    <head-placeholder token="{{ placeholder_token|raw }}">
+<head>
+  <head-placeholder token="{{ placeholder_token|raw }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="/{{ base_path ~ directory }}/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/{{ base_path ~ directory }}/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/{{ base_path ~ directory }}/favicon-16x16.png">
+    <link rel="manifest" href="/{{ base_path ~ directory }}/manifest.json">
+    <link rel="mask-icon" href="/{{ base_path ~ directory }}/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-config" content="/{{ base_path ~ directory }}/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token|raw }}">
-    <js-placeholder token="{{ placeholder_token|raw }}">
-  </head>
-  <body{{ attributes.addClass(body_classes) }}>
-    <a href="#main-content" class="visually-hidden focusable skip-link">
-      {{ 'Skip to main content'|t }}
-    </a>
-    {{ page_top }}
-    {{ page }}
-    {{ page_bottom }}
-    <js-bottom-placeholder token="{{ placeholder_token|raw }}">
-  </body>
+      <js-placeholder token="{{ placeholder_token|raw }}">
+        </head>
+<body{{ attributes.addClass(body_classes) }}>
+<a href="#main-content" class="visually-hidden focusable skip-link">
+  {{ 'Skip to main content'|t }}
+</a>
+{{ page_top }}
+{{ page }}
+{{ page_bottom }}
+<js-bottom-placeholder token="{{ placeholder_token|raw }}">
+</body>
 </html>
