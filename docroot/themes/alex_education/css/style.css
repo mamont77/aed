@@ -7956,6 +7956,10 @@ h2 {
   color: #6e6e6e;
 }
 
+.nav-tabs {
+  margin-bottom: 15px;
+}
+
 .footer {
   padding-top: 35px;
   padding-bottom: 36px;
@@ -8039,6 +8043,10 @@ p:last-child,
 .more-link {
   float: right;
   font-weight: 700;
+}
+
+.region-sidebar-second .more-link {
+  margin-top: 5px;
 }
 
 .form-item .label {
@@ -8173,6 +8181,7 @@ article mark {
   margin-bottom: 15px;
   padding: 0;
   text-align: right;
+  font-size: 12px;
 }
 .action-links .btn {
   padding: 6px 20px;
@@ -8183,6 +8192,68 @@ article mark {
   font-weight: 900;
   margin-left: -0.1em;
   padding-right: 0.2em;
+}
+
+.comment {
+  margin-bottom: 15px;
+}
+.comment:first-of-type {
+  margin-top: 15px;
+}
+.comment .comment__content {
+  border: 1px solid #d3d7d9;
+}
+.comment .comment__content h3 {
+  font-size: 16px;
+}
+.comment .comment__content .links {
+  text-align: right;
+}
+.comment .comment__content:before {
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 20px;
+  border-top: 20px solid transparent;
+  border-right: 20px solid #d3d7d9;
+  border-bottom: 20px solid transparent;
+}
+.comment .comment__content:after {
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 20px;
+  border-top: 20px solid transparent;
+  border-right: 20px solid #fff;
+  border-bottom: 20px solid transparent;
+  margin-right: -1px;
+}
+.comment .comment__author {
+  margin: 4px 0;
+  line-height: 1.2;
+}
+.comment .comment__time {
+  margin-bottom: 4px;
+  color: #68696b;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.733em;
+  line-height: 1.2;
+}
+.comment .comment__permalink {
+  font-size: 0.733em;
+  line-height: 1.2;
+}
+
+.comment-form {
+  border: 1px solid #B0B0B0;
+  padding: 15px;
+}
+.comment-form .form-actions {
+  text-align: center;
+}
+
+.list-inline .comment-add {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
