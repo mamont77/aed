@@ -8155,4 +8155,34 @@ article mark {
   border-radius: 4px;
 }
 
+.forum .table > thead {
+  text-transform: uppercase;
+  background: #E1E2DC;
+}
+.forum .table > thead tr > th {
+  text-align: center;
+  font-weight: normal;
+  border-bottom: none;
+}
+.forum .table > thead tr > th:last-child {
+  min-width: 270px;
+}
+
+.action-links {
+  list-style: outside none none;
+  margin-bottom: 15px;
+  padding: 0;
+  text-align: right;
+}
+.action-links .btn {
+  padding: 6px 20px;
+  font-weight: 700;
+}
+.action-links .btn:before {
+  content: '+';
+  font-weight: 900;
+  margin-left: -0.1em;
+  padding-right: 0.2em;
+}
+
 /*# sourceMappingURL=style.css.map */

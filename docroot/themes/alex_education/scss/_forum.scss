@@ -1,0 +1,38 @@
+.forum {
+  .table {
+    > thead {
+      text-transform: uppercase;
+      background: #E1E2DC;
+      tr {
+        > th {
+          text-align: center;
+          font-weight: normal;
+          border-bottom: none;
+          &:last-child {
+            min-width: 270px;
+            @media (max-width: 992px) {
+              //min-width: 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.action-links {
+  list-style: outside none none;
+  margin-bottom: 15px;
+  padding: 0;
+  text-align: right;
+  .btn {
+    padding: 6px 20px;
+    font-weight: 700;
+    &:before {
+      content: '+';
+      font-weight: 900;
+      margin-left: -0.1em;
+      padding-right: 0.2em;
+    }
+  }
+}
