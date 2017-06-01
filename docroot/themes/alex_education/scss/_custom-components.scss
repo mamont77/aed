@@ -37,27 +37,27 @@
   float: right;
 }
 
-.field--name-field-tags {
-  .field--item {
+.field--name-field-tags .field--item,
+.field--name-taxonomy-forums {
+  display: inline-block;
+  a {
     position: relative;
-    display: inline-block;
     margin: 10px 10px 10px 0;
     border: 1px solid #C8C8C8;
     border-right: none;
     padding: 0 10px;
-    a {
-
-    }
+    display: block;
+    text-decoration: none;
     &:after {
-      background: url(../images/stat-sprite.png) no-repeat transparent;
+      @extend .alex-icon-after;
       background-position: -178px -219px;
-      content: '';
-      display: block;
-      position: absolute;
-      height: 20px;
-      right: -5px;
-      top: 0;
-      width: 5px;
+    }
+    &:hover {
+      color: #FFF;
+      background-color: #5D8136;
+      &:after {
+        background-position: -171px -219px;
+      }
     }
   }
 }
@@ -83,5 +83,64 @@
   h2 {
     font-size: 14px;
     margin: 0 0 5px 0;
+  }
+}
+
+.green-menu {
+  .nav {
+    border: 1px solid #E8E8E8;
+    font-size: 16px;
+    font-weight: 700;
+    > li {
+      border-bottom: 1px solid #E8E8E8;
+      > a {
+        &:hover,
+        &:focus {
+          background-color: #DFB;
+        }
+        &.is-active {
+          background-color: #DFB;
+        }
+      }
+      &:last-child {
+        border: none;
+      }
+      &.active {
+
+      }
+    }
+  }
+}
+
+.materials-menu {
+  .contextual {
+    li {
+      &:before {
+        content: '';
+        display: none;
+      }
+    }
+  }
+  ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    border: 1px solid #E8E8E8;
+    > li {
+      position: relative;
+      display: block;
+      border-bottom: 1px solid #E8E8E8;
+      padding: $nav-link-padding;
+      > a {
+        display: block;
+      }
+      &:last-child {
+        border: none;
+      }
+      &:before {
+        @extend .alex-icon-before;
+        background-position: -98px -198px;
+      }
+    }
   }
 }

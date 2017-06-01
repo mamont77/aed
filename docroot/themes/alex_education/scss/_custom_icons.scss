@@ -1,0 +1,21 @@
+.alex-icon-after {
+  background: url(../images/stat-sprite.png) no-repeat transparent;
+  content: '';
+  display: block;
+  position: absolute;
+  height: 20px;
+  right: -5px;
+  top: 0;
+  width: 5px;
+}
+
+.alex-icon-before {
+  background: url(../images/stat-sprite.png) no-repeat transparent;
+  content: '';
+  display: block;
+  float: left;
+  height: 18px;
+  width: 18px;
+  //padding-left: 5px;
+  margin-right: 5px;
+}
